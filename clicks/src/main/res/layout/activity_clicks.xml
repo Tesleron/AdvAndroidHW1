@@ -1,0 +1,44 @@
+<!-- activity_clicks.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Include the base activity's content -->
+    <include layout="@layout/activity_main" />
+
+    <!-- Middle message -->
+    <TextView
+        android:id="@+id/text_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap as much as possible within the given time!"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Timer TextView -->
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:textSize="24sp"
+        android:layout_below="@id/text_middle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Clicks counter -->
+    <TextView
+        android:id="@+id/text_clicks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clicks: 0"
+        android:textSize="18sp"
+        android:layout_below="@id/timer_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"/>
+</RelativeLayout>
